@@ -1,0 +1,13 @@
+[Unit]
+Description=Ngrok
+After=NetworkManager.service
+
+[Service]
+Type=simple
+User=upsquared
+WorkingDirectory=/home/upsquared
+ExecStart=/home/upsquared/ngrok start --all --config="/home/upsquared/.ngrok2/ngrok.yml"
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target

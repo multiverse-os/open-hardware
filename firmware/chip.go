@@ -54,15 +54,3 @@ const (
 type Pin struct {
 	Type PinType
 }
-
-type Protocol int
-
-type UART Protocol
-
-const (
-	Tx UART = iota
-	Rx
-)
-
-// TODO: We need to describe that both a pin is a UART pin, but it is also a
-// sub-pin type of that UART protocol, or SPI protocol.

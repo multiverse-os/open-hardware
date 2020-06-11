@@ -1,17 +1,34 @@
-# Multiverse Open Hardware 
-The collection of tools that is beginning as primarily a TinyGo firmware
-development framework, and flashing tools for simplifying putting open source
-BIOS and firmware on existing hardware, and design open hardware solutions for
-extending the possibilities available to Multiverse OS development. A focus on
-open architecture, cryptographically secure, and updated firmware; and providing
-greater freedom to create and extend modern general use computing beyond black
-boxes, coporate denial of moore's law collapse, unfathomable waste of rare
-materials, and corporate hoarding of literal thoughts in closed production
-enviornment, processes, and abhorrrent working conditions for insecure,
-uninspired devices that have some years featured software upgrades, and
-intential sabatoge of existing hardware.  
+# Botvac Hacking & Development 
+When I asked the company/developers they refused to tell me anything about the
+device. I knew I could get shell, and I could use the JTAG port on the board.
+And if you look at the board of the 85 and the wifi version, its the exact same
+board with parts removed, so one could just add their own parts using those
+slots or just add equivilent parts. But I wanted to determine how friendly they
+were to open source developers and it turns out not at all. 
 
-# Open hardware, driving open hardware, powered by software driven worker coops
+The lidar could be used to map a building. so it would mkae a good basis for
+home auotmation, if there were a unified API that gathered data. It could help
+setting up wifi, by detecting network deadspots, it could carry a microphone for
+speaker system testing, humdity sensors for measuring humidty in various rooms.
+This robot could be a data collector, since few other general purpose robots
+need to move throughout a home. 
+
+Ideally the future would be a completely open design made of cheap or recyled
+parts, and modular and simple design makes it easy to construct; not so that
+everyone is creating their own, but that manufacture is simple that people could
+take it upon themselves to build them for sale to others, preferably using a
+cooperative design over any conventional corporate structure. 
+
+## Design 
+Our first botvac hack is meant to be siple using a very cheap AT Tiny, or cheap
+ARM M0+, that would tap the LVDS to allow for the robot to control the screen
+but allow our hardware overlay hack to also write to the screen. It should also
+be able to interact with the linux installation, and provide wireless
+interaction with the shell. The shell provided by default is crippled and
+doesn't allow for extending the functionality because if you could do that you
+woud not be dependent on the company to provide you with insigificant upgrades
+on the same hardware every few years. 
+
 This parasitic relationsip between hardware companies, the people who use the
 hardware, and treats hardware as if the earth was not just actively experiencing
 ecosystem collapse (obviously not just do to poor use of refined and fabricated
